@@ -9,14 +9,9 @@ module.exports = {
   module: {
     rules: [
       {
+        use: 'babel-loader',
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env']
-          }
-        }
+        exclude: /node_modules/
       }
     ]
   }
