@@ -1,8 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Hello from './components/Hello'
 
 const App = () => {
-  return <h1>Hello</h1>
+  return (
+    <div>
+      <h1>Hello</h1>
+      <Hello></Hello>
+    </div>
+  )
 }
 
 ReactDOM.render(<App />, document.querySelector('#root'))
